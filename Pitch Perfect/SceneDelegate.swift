@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Pitch Perfect
 //
-//  Created by Nedra Ferguson on 1/16/20.
+//  Created by Nedra Mevoli on 1/16/20.
 //  Copyright © 2020 Nedra Mevoli. All rights reserved.
 //
 
