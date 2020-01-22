@@ -73,7 +73,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "stopRecording" {
+            //this is setting the destination, but since it's expecting UIViewController and not PlaySoundsViewController, we have to *upcast* it using a *forced upcast*
+            let playSoundsVC = segue.destination as! PlaySoundsViewController
+            let recordedAudioURL = sender as! URL
+            playSoundsVC.recordedAudioURL = recordedAudioURL
+        }
     }
 }
 
