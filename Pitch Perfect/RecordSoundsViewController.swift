@@ -53,8 +53,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         try! audioSession.setActive(false)
     }
     
-//        //if recordButton is enabled, the stopRecordingButton is enabled. if stopRecording, the recordButton is enabled
-
     func recordingInProgress (on: Bool){
         if on == true {
             recordingLabel.text = "Recording in Progress"
@@ -77,7 +75,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "stopRecording" {
             //this is setting the destination, but since it's expecting UIViewController and not PlaySoundsViewController, we have to *upcast* it using a *forced upcast*
