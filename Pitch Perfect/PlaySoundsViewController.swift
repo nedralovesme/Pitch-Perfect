@@ -1,11 +1,3 @@
-//
-//  playSoundsViewController.swift
-//  Pitch Perfect
-//
-//  Created by Nedra Mevoli on 1/17/20.
-//  Copyright © 2020 Nedra Mevoli. All rights reserved.
-//
-
 import UIKit
 import AVFoundation
 
